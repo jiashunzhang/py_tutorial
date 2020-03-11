@@ -10,7 +10,7 @@ def rand(a, b):
 
 def make_matrix(m, n, fill=0.0):
     mat = []
-    for i in range(m):
+    for _ in range(m):
         mat.append([fill] * n)
     return mat
 
@@ -110,7 +110,7 @@ class BPNeuralNetwork:
         return error
 
     def train(self, cases, labels, limit=10000, learn=0.05, correct=0.1):
-        for j in range(limit):
+        for _ in range(limit):
             error = 0.0
             for i in range(len(cases)):
                 label = labels[i]
