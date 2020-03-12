@@ -126,7 +126,7 @@ class BPNeuralNetwork:
         ]
         labels = [[0], [1], [1], [0]]
         self.setup(2, 5, 1)
-        self.train(cases, labels, 10000, 0.05, 0.1)
+        self.train(cases, labels, 100000, 0.02, 0.1)
         for case in cases:
             print(self.predict(case))
 
